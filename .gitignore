@@ -1,24 +1,41 @@
-# *.log
-.DS_Store
+# Laravel default ignore
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
 .env
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-# /.fleet
-# /.idea
-# /.nova
-# /.phpunit.cache
-# /.vscode
-# /.zed
-# /auth.json
-# /node_modules
-# /public/build
-# /public/hot
-# /public/storage
-# /storage/*.key
-# /storage/pail
-# /vendor
+.env.*
 Homestead.json
 Homestead.yaml
+.idea
+.phpunit.result.cache
+.phpactor.json
+.phpunit.cache
+/.vscode
+/.DS_Store
 Thumbs.db
+
+# Cache / log / build
+/storage/app/public
+/storage/framework/cache/*
+/storage/framework/sessions
+/storage/framework/views
+/storage/logs
+/public/hot
+/public/build
+npm-debug.log
+yarn-error.log
+
+# JetBrains & PHPStorm
+/.idea
+
+# Fleet IDE
+/.fleet
+
+# Other system files
+.DS_Store
+Thumbs.db
+
+# Optional: uncomment if needed
+# tests/Browser/screenshots
+# tests/Browser/console
