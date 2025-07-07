@@ -9,7 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('patients', function (Blueprint $table) {
             $table->id();
@@ -18,14 +18,11 @@ return new class extends Migration
             $table->string('nomor_telepon');
             $table->text('kebutuhan');
             $table->text('alamat');
+            $table->date('jadwal_follow_up')->nullable(); // dipindah ke sini
             $table->timestamps();
-            Schema::table('patients', function (Blueprint $table) {
-                $table->date('jadwal_follow_up')->nullable();
-            });
         });
     }
 
-    
     /**
      * Reverse the migrations.
      */
