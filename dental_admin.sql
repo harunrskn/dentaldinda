@@ -1,7 +1,6 @@
 
--- Buat database
-CREATE DATABASE IF NOT EXISTS dental_admin;
-USE dental_admin;
+
+
 
 -- Tabel patients
 CREATE TABLE IF NOT EXISTS patients (

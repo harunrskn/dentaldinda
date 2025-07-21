@@ -22,4 +22,13 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+    <FilesMatch "\.(json|webmanifest)$">
+    Header set Content-Type "application/manifest+json"
+</FilesMatch>
+
+<FilesMatch "\.js$">
+    Header set Content-Type "application/javascript"
+</FilesMatch>
+
+
 </IfModule>
